@@ -22,7 +22,7 @@ jobs:
           - v1-dependencies-
 
       # install dependencies
-      - run: 
+      - run:
           name: Installing dependencies
           command: yarn install
 
@@ -36,8 +36,3 @@ jobs:
       - run:
           name: Build static assets
           command: yarn build
-
-      # notify featurepeek
-      - run:
-          name: Pinging FeaturePeek
-          command: bash <(curl -s https://peek.run/ci)
